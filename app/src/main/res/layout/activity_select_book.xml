@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.studentSelectBook.SelectBookActivity">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.libraryloan.screens.addNewBook.AddNewBookViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+
+
+        <ImageView
+            android:id="@+id/bookImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/book1"
+            />
+
+        <LinearLayout
+            android:id="@+id/isbn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookImage"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="@string/isbn"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/isbn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="@string/isbn"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/isbn_layout"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="Title" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="Title" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/author_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_layout"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="@string/author" />
+
+            <TextView
+                android:id="@+id/author_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="Author" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/publisheddate_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author_layout"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/publishedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="@string/published_date" />
+
+            <TextView
+            android:id="@+id/publishedDate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="7"
+            android:text="@string/published_date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quantityInStock_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/publisheddate_layout"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/quantityInStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="@string/category" />
+
+            <TextView
+                android:id="@+id/quantityInStock_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="stock" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loanPeriod_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantityInStock_layout"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/loanPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="period" />
+
+            <TextView
+                android:id="@+id/loanPeriod_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="7"
+                android:text="PERIOD" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loanPeriod_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp">
+
+
+
+            <Button
+                android:id="@+id/borrowBook"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:paddingHorizontal="10dp"
+                android:text="BORROW"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>

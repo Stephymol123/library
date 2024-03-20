@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Library Loan</string>
+
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loginbtn">LOGIN</string>
+    <string name="registrationbtn">REGISTRATION</string>
+
+    <string name="registration_text">Registration</string>
+    <string name="studentId">StudentID</string>
+    <string name="firstName">First Name</string>
+    <string name="middleName">Middle Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phnno">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="otherGender">Other</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date of Birth</string>
+    <string name="confirmPassowrd">Confirm Password</string>
+    <string name="cancel_reg">Cancel</string>
+    <string name="register">Register</string>
+
+    <string name="addbook_text">Add new Book</string>
+    <string name="bookimage">Image</string>
+    <string name="isbn">ISBN</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="published_date">Published Date</string>
+    <string name="category">Category</string>
+    <string name="loanPeriod">Loan Period</string>
+    <string name="save_newbook">Save</string>
+
+    <string name="update_text">Update Book</string>
+    <string name="bookimage1">Image</string>
+    <string name="isbn1">ISBN</string>
+    <string name="title1">Title</string>
+    <string name="author1">Author</string>
+    <string name="published_date1">Published Date</string>
+    <string name="category1">Category</string>
+    <string name="cancel_new1">Cancel</string>
+    <string name="save_newbook1">Update</string>
+    <string name="title_colon">Title:</string>
+    <string name="author_colon">Author:</string>
+    <string name="category_colon">Category:</string>
+    <string name="click_to_add_image">Add Image</string>
+    <string name="quantity">Quantity</string>
+    <string name="log_out">Log out</string>
+
+
+</resources>
